@@ -10,6 +10,8 @@ h1 {
   font-family: cursive;
   padding-top: 10%;
   font-size: xx-large;
+  color: aliceblue;
+  /* margin-bottom: 50px; */
 }
 h2 {
   text-align: left;
@@ -22,7 +24,8 @@ h2 {
 .BackgroundSreenHome{
   text-align: center;
   height:100vh;
-  background-image: url('/images/flat01.png');
+  width: 100vw;
+  background-image: url('/images/cup.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +68,7 @@ h2 {
 
 .Banner {
   height: 80px;
-  background-image: url('/images/flat01.png');
+  background-image: url('/images/bundle.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
