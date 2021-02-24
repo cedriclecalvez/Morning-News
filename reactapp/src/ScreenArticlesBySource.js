@@ -4,6 +4,7 @@ import { Card, Icon, Modal} from 'antd';
 import Nav from './Nav'
 import {connect} from 'react-redux'
 
+
 const { Meta } = Card;
 
 function ScreenArticlesBySource(props) {
@@ -24,8 +25,8 @@ function ScreenArticlesBySource(props) {
     body: `title=${article.title}&img=${article.urlToImage}&description=${article.description}&token3=${props.token}`
     });
   }
-
   useEffect(() => {
+    
     const findArticles = async() => {
       const data = await fetch(`https://newsapi.org/v2/top-headlines?sources=${props.match.params.id}&apiKey=262b1d41934e4229b9dd3e4999a0bfd8`)
       const body = await data.json()
